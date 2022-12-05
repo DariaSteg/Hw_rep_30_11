@@ -26,7 +26,6 @@ class RangeValidator {
         if (typeof to !== "number") {
           throw new TypeError("from must be number");
         }
-    
         if (to > 10 || to < this._from) {
           throw new RangeError("numbers must be 0...10");
         }
